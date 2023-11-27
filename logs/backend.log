@@ -3140,3 +3140,4 @@
 27.11.2023, 15:50:55 - DEBUG - Getting Stays | {"userId":null,"label":"Ski-in/out","destinations":"France","checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
 27.11.2023, 15:51:19 - DEBUG - Getting Stays | {"userId":null,"label":"Ski-in/out","destinations":"Portugal","checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
 27.11.2023, 15:53:09 - INFO - Server listening on port http://127.0.0.1:3030/ 
+27.11.2023, 16:13:41 - INFO - Server listening on port http://127.0.0.1:3030/ 
