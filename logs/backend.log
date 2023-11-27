@@ -3117,3 +3117,26 @@
 27.11.2023, 12:55:38 - INFO - Server listening on port http://127.0.0.1:3030/ 
 27.11.2023, 13:43:19 - INFO - Server listening on port http://127.0.0.1:3030/ 
 27.11.2023, 13:48:03 - INFO - Server listening on port http://127.0.0.1:3030/ 
+27.11.2023, 14:54:59 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 14:56:11 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 14:56:18 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 14:56:32 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 14:56:37 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 14:56:38 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 14:56:48 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 14:56:57 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 14:57:09 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 14:57:23 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 15:12:51 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 15:13:30 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 15:17:34 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 15:38:23 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 15:41:12 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 15:50:18 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 15:50:22 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 15:50:29 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":"Italy","checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 15:50:34 - DEBUG - Getting Stays | {"userId":null,"label":"Chief's kitchens","destinations":"Italy","checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 15:50:42 - DEBUG - Getting Stays | {"userId":null,"label":"Chief's kitchens","destinations":"France","checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 15:50:55 - DEBUG - Getting Stays | {"userId":null,"label":"Ski-in/out","destinations":"France","checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 15:51:19 - DEBUG - Getting Stays | {"userId":null,"label":"Ski-in/out","destinations":"Portugal","checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
+27.11.2023, 15:53:09 - INFO - Server listening on port http://127.0.0.1:3030/ 
