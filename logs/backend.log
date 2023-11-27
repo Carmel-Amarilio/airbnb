@@ -3115,3 +3115,4 @@
 27.11.2023, 12:35:08 - DEBUG - Getting Stays | {"userId":null,"label":"Amazing views","destinations":null,"checkIn":null,"checkOut":null,"guests":{"adults":"0","children":"0","infants":"0"},"wishlist":null} 
 27.11.2023, 12:53:37 - INFO - Server listening on port http://127.0.0.1:3030/ 
 27.11.2023, 12:55:38 - INFO - Server listening on port http://127.0.0.1:3030/ 
+27.11.2023, 13:43:19 - INFO - Server listening on port http://127.0.0.1:3030/ 
