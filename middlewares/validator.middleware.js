@@ -110,4 +110,5 @@ const orderSchema = Joi.object({
     }),
     msgs: Joi.array().items(Joi.object()).optional().default([]),
     status: Joi.string().required(),
+    lastUpdate: Joi.number().required(),
 });

@@ -32,7 +32,9 @@ async function query({ userId, isMsg, isGuest }, sortBy) {
 
 
         const collection = await dbService.getCollection('order');
-        const orders = await collection.find(criteria).sort({ [sortBy]: 1 }).toArray();
+        const orders = sortBy === 'lastUpdate' ?
+            await collection.find(criteria).sort({ [sortBy]: -1 }).toArray() :
+            await collection.find(criteria).sort({ [sortBy]: 1 }).toArray()
         return orders;
     } catch (err) {
         logger.error('Cannot find orders', err);
@@ -73,9 +75,9 @@ async function add(order) {
     }
 }
 
-async function update({ _id, hostId, buyer, totalPrice, checkIn, checkOut, guests, stay, msgs, status }) {
+async function update({ _id, hostId, buyer, totalPrice, checkIn, checkOut, guests, stay, msgs, status, lastUpdate }) {
     try {
-        const orderToSave = { hostId, buyer, totalPrice, checkIn, checkOut, guests, stay, msgs, status }
+        const orderToSave = { hostId, buyer, totalPrice, checkIn, checkOut, guests, stay, msgs, status, lastUpdate }
         const collection = await dbService.getCollection('order')
         await collection.updateOne({ _id: ObjectId(_id) }, { $set: orderToSave })
         return orderToSave

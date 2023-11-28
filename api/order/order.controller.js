@@ -36,7 +36,8 @@ export async function addOrder(req, res) {
     try {
         const order = req.body
         const addedOrder = await orderService.add(order)
-        socketService.broadcast({ type: 'order-added', data: order, userId: loggedinUser._id })
+        let otherUserId  = order.hostId === loggedinUser._id? order.buyer._id : order.hostId
+        socketService.emitToUser({ type: 'order-added', data: order, userId: otherUserId })
         res.json(addedOrder)
     } catch (err) {
         logger.error('Failed to add order', err)
@@ -45,10 +46,12 @@ export async function addOrder(req, res) {
 }
 
 export async function updateOrder(req, res) {
+    const { loggedinUser } = req
     try {
         const order = req.body
         const updatedOrder = await orderService.update(order)
-        socketService.broadcast({ type: 'order-updated', data: order, userId: loggedinUser._id })
+        let otherUserId  = order.hostId === loggedinUser._id? order.buyer._id : order.hostId
+        socketService.emitToUser({ type: 'order-updated', data: order, userId: otherUserId })
         res.json(updatedOrder)
     } catch (err) {
         logger.error('Failed to update order', err)
@@ -61,7 +64,7 @@ export async function removeOrder(req, res) {
     try {
         const orderId = req.params.id
         await orderService.remove(orderId)
-        socketService.broadcast({ type: 'order-remove', data: orderId, userId: loggedinUser._id })
+        // socketService.broadcast({ type: 'order-remove', data: orderId, userId: loggedinUser._id })
         res.send()
     } catch (err) {
         logger.error('Failed to remove order', err)
