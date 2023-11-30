@@ -30,10 +30,10 @@ async function query({ userId, wishlist, label, destinations, checkIn, checkOut,
                 );
             }
             if (guests) criteria['capacity.guests'] = { $gte: +guests.adults + +guests.children }
-            if (label) criteria['labels'] = { $in: [label] }
+            if (label && label != 'All') criteria['labels'] = { $in: [label] }
+            else if (label && label === 'All') criteria
             if (checkIn && checkOut) criteria['DateNotAvailable'] = { $nin: utilService.getDatesBetween(checkIn, checkOut) }
         }
-        console.log(criteria);
 
         const collection = await dbService.getCollection('stay');
         const stays = await collection.find(criteria).toArray();

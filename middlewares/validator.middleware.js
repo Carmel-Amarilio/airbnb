@@ -72,7 +72,7 @@ const staySchema = Joi.object({
         countryCode: Joi.string().min(0).required(),
         city: Joi.string().min(2).required(),
         street: Joi.string().min(2).required(),
-        houseNumber: Joi.string().min(2).required(),
+        houseNumber: Joi.string().min(0),
         lat: Joi.number(),
         lng: Joi.number()
     }),

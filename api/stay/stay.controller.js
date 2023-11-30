@@ -72,20 +72,3 @@ export async function removeStay(req, res) {
     }
 }
 
-// export async function updateStayLikes(req, res) {
-//     const { loggedinUser } = req
-//     try {
-//         const stayId = req.params.id
-//         const stay = await stayService.getById(stayId)
-//         console.log(stay);
-//         const likeIndx = stay.likedByUsers.findIndex((user) => user._id === loggedinUser._id)
-//         if (likeIndx >= 0) stay.likedByUsers.splice(likeIndx, 1)
-//         else stay.likedByUsers.push(loggedinUser)
-//         console.log(stay);
-//         // res.json(updateStay)
-//     } catch (err) {
-//         logger.error('Failed to update stay likes', err)
-//         res.status(500).send({ err: 'Failed to update stay likes' })
-//     }
-// }
-
