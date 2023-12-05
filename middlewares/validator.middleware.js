@@ -2,24 +2,27 @@ import Joi from "joi";
 
 export const validateSignup = (req, res, next) => {
     const { error } = signupSchema.validate(req.body, { abortEarly: false });
-    if (error) return res.status(400).json({ error: error.details.map((err) => err.message) });
+    if (error) {
+        console.log(error);
+        return res.status(400).json({ error: error.details.map((err) => err.message) });
+    }
     next()
 }
 export const validateStay = (req, res, next) => {
     // console.log(req.body);
     const { error } = staySchema.validate(req.body, { abortEarly: false });
     if (error) {
-        // console.log(error);
+        console.log(error);
         return res.status(400).json({ error: error.details.map((err) => err.message) });
     }
     next()
 }
 export const validateOrder = (req, res, next) => {
     const { error } = orderSchema.validate(req.body, { abortEarly: false });
-    if (error){
+    if (error) {
         console.log(error);
         return res.status(400).json({ error: error.details.map((err) => err.message) });
-    } 
+    }
     next()
 }
 // const signupSchema = Joi.object({
@@ -65,7 +68,7 @@ const staySchema = Joi.object({
     host: Joi.object({
         _id: Joi.string().min(2).required(),
         fullName: Joi.string().min(2).max(20).required(),
-        imgUrl: Joi.string().min(10).max(190).optional().allow(null),
+        imgUrl: Joi.string().min(10).max(600).optional().allow(null),
     }),
     loc: Joi.object({
         country: Joi.string().min(2).required(),
@@ -87,12 +90,12 @@ const orderSchema = Joi.object({
     host: Joi.object({
         _id: Joi.string().min(2).required(),
         fullName: Joi.string().min(2).max(20).required(),
-        imgUrl: Joi.string().min(10).max(190).optional().allow(null),
+        imgUrl: Joi.string().min(10).max(600).optional().allow(null),
     }),
     buyer: Joi.object({
         _id: Joi.string().min(2).required(),
         fullName: Joi.string().min(2).max(20).required(),
-        imgUrl: Joi.string().min(10).max(190).optional().allow(null),
+        imgUrl: Joi.string().min(10).max(600).optional().allow(null),
     }),
     totalPrice: Joi.number().min(1).optional().allow(null),
     checkIn: Joi.string().min(5).max(190).optional().allow(null),
@@ -106,7 +109,7 @@ const orderSchema = Joi.object({
         _id: Joi.string().min(2).required(),
         name: Joi.string().min(2).required(),
         price: Joi.number().min(1).required(),
-        imgUrl: Joi.string().min(10).max(190).optional().allow(null),
+        imgUrl: Joi.string().min(10).max(600).optional().allow(null),
     }),
     msgs: Joi.array().items(Joi.object()).optional().default([]),
     status: Joi.string().required(),
